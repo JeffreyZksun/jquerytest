@@ -1,0 +1,14 @@
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>
+$.ajax({
+	url: "http://code.angularjs.org/1.2.0rc1/angular.min.js",
+	type: "GET",
+	dataType: "script",
+	success: function(){ 
+		if(typeof angular !== undefined )console.log('evaluated');
+		else console.log('not evaluated');
+		}, 
+	error: function(){ console.log('failure')}
+  });
+
+</script>
